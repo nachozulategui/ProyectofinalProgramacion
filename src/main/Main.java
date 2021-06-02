@@ -1,4 +1,4 @@
-package Main;
+package main;
 import vista.Ventana;
 public class Main {
 
