@@ -49,7 +49,7 @@ public class FormularioAlumno extends JFrame {
 		contentPane.add(textoAnio);
 		textoAnio.setColumns(10);
 		
-		JComboBox comboMes = new JComboBox();
+		final JComboBox comboMes = new JComboBox();
 		comboMes.setModel(new DefaultComboBoxModel(new String[] {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}));
 		comboMes.setBounds(190, 100, 137, 22);
 		contentPane.add(comboMes);
