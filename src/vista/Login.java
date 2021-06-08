@@ -1,20 +1,15 @@
 package vista;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
-public class Ventana extends JFrame {
+public class Login extends JFrame {
 
 	private JPanel contentPane;
 
-	public Ventana() {
+	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -22,12 +17,8 @@ public class Ventana extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnNewButton.setBounds(162, 145, 85, 21);
+		JButton btnNewButton = new JButton("Boton");
+		btnNewButton.setBounds(169, 166, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		setVisible(true);
