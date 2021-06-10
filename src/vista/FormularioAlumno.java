@@ -23,7 +23,7 @@ public class FormularioAlumno extends JFrame {
 	private JTextField textoAnio;
 
 	public FormularioAlumno() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -49,7 +49,7 @@ public class FormularioAlumno extends JFrame {
 		contentPane.add(textoAnio);
 		textoAnio.setColumns(10);
 		
-		final JComboBox comboMes = new JComboBox();
+		JComboBox comboMes = new JComboBox();
 		comboMes.setModel(new DefaultComboBoxModel(new String[] {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}));
 		comboMes.setBounds(190, 100, 137, 22);
 		contentPane.add(comboMes);
